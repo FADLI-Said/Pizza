@@ -1,1 +1,6 @@
-/*# sourceMappingURL=style.css.map */
+body header {
+  height: 40rem;
+  background-image: url(../images/presentation.jpg);
+  background-size: cover;
+  background-position: center;
+}/*# sourceMappingURL=style.css.map */
