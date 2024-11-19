@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza</title>
+    <title>La Pizzeria</title>
     <link rel="stylesheet" href="./node_modules\bootstrap\dist\css\bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -65,7 +65,10 @@
                     <div class="card-body">
                         <div>
                             <p class="flex-fill">18 &#x20AC;</p>
-                            <a href="#" class="btn btn-primary">+ info</a>
+                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Pizza Sans Fromage" data-bs-content="Sauce tomate, Crème végétale, Pesto, Huile d'olive">
+                                Prix
+                            </button>
                             <a href="#" class="btn btn-primary">Commander</a>
                         </div>
                     </div>
@@ -76,7 +79,10 @@
                     <div class="card-body">
                         <div>
                             <p class="flex-fill">666 &#x20AC;</p>
-                            <a href="#" class="btn btn-primary">+ info</a>
+                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Pizza Sans Fromage" data-bs-content="Sauce tomate, Crème végétale, Pesto, Huile d'olive">
+                                Prix
+                            </button>
                             <a href="#" class="btn btn-primary">Commander</a>
                         </div>
                     </div>
@@ -87,7 +93,10 @@
                     <div class="card-body">
                         <div>
                             <p class="flex-fill">2 &#x20AC;</p>
-                            <a href="#" class="btn btn-primary">+ info</a>
+                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Pizza Sans Fromage" data-bs-content="Sauce tomate, Crème végétale, Pesto, Huile d'olive">
+                                Prix
+                            </button>
                             <a href="#" class="btn btn-primary">Commander</a>
                         </div>
                     </div>
@@ -108,7 +117,16 @@
 
     </main>
 
-    <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+    <script src="./node_modules\@popperjs\core\dist\umd\popper.min.js"></script>
+    <script src="./node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+            const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl);
+            });
+        });
+    </script>
 </body>
 
 </html>
