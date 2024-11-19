@@ -1,6 +1,40 @@
-body header {
+body header .carousel-item {
   height: 40rem;
+}
+body header .pizza-1 {
   background-image: url(../images/presentation.jpg);
   background-size: cover;
+  background-position: bottom;
+}
+body header .pizza-2 {
+  background-image: url(../images/presentation2.jpg);
+  background-size: cover;
   background-position: center;
+}
+body header .pizza-3 {
+  background-image: url(../images/presentation3.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+body .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+body .navbar .nav-link {
+  color: black;
+}
+body .navbar .nav-link.active {
+  color: white;
+  background-color: black;
+}
+body main {
+  margin-top: 2rem;
+}
+body main .scrollspy-example #scrollspyHeading2 {
+  display: flex;
+  justify-content: space-around;
+}
+body main .scrollspy-example #scrollspyHeading2 .card .card-body div {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

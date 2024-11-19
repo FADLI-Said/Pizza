@@ -1,8 +1,61 @@
-body{
-    header{
-        height: 40rem;
-        background-image: url(../images/presentation.jpg);
-        background-size: cover;
-        background-position: center;
+body {
+    header {
+
+        .carousel-item {
+            height: 40rem;
+            
+        }
+
+        .pizza-1{
+            background-image: url(../images/presentation.jpg);
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        .pizza-2{
+            background-image: url(../images/presentation2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .pizza-3{
+            background-image: url(../images/presentation3.jpg);
+            background-size: cover;
+            background-position: bottom;
+        }
     }
+
+    .navbar{
+        position: sticky;
+        top: 0;
+        z-index: 10;
+
+        .nav-link{
+            color: black;
+        }
+
+        .nav-link.active {
+            color: white;
+            background-color: black;
+        }
+    }
+
+    main{
+        margin-top: 2rem;
+        .scrollspy-example{
+            #scrollspyHeading2{
+                display: flex;
+                justify-content: space-around;
+
+                .card{
+                    .card-body{
+                        div{
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }
