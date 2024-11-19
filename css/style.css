@@ -1,5 +1,36 @@
+@charset "UTF-8";
+body .background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  /* Place le fond derrière le contenu */
+}
+body .background-container .background-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Couvre toute la zone sans déformer l'image */
+  filter: blur(1rem);
+  /* Applique un flou de 8 pixels */
+}
+body .background-container .background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.8);
+}
+body header {
+  background-image: url(../images/LOGO-removebg-preview.png);
+}
 body header .carousel-item {
-  height: 40rem;
+  height: 30rem;
 }
 body header .pizza-1 {
   background-image: url(../images/presentation.jpg);
@@ -14,7 +45,7 @@ body header .pizza-2 {
 body header .pizza-3 {
   background-image: url(../images/presentation3.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 body .navbar {
   position: sticky;
@@ -25,16 +56,32 @@ body .navbar .nav-link {
   color: black;
 }
 body .navbar .nav-link.active {
-  color: white;
+  color: yellow;
   background-color: black;
 }
 body main {
   margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+body main .scrollspy-example #scrollspyHeading1 {
+  display: flex;
+  justify-content: space-around;
+}
+body main .scrollspy-example #scrollspyHeading1 .card .card-body div {
+  display: flex;
 }
 body main .scrollspy-example #scrollspyHeading2 {
   display: flex;
   justify-content: space-around;
 }
 body main .scrollspy-example #scrollspyHeading2 .card .card-body div {
+  display: flex;
+}
+body main .scrollspy-example #scrollspyHeading3 {
+  display: flex;
+  justify-content: space-around;
+}
+body main .scrollspy-example #scrollspyHeading3 .card .card-body div {
   display: flex;
 }/*# sourceMappingURL=style.css.map */

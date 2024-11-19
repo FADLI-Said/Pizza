@@ -10,6 +10,12 @@
 </head>
 
 <body>
+
+    <div class="background-container">
+        <img src="./images/LOGO-removebg-preview.png" alt="Image de fond" class="background-image">
+        <div class="background-overlay"></div>
+    </div>
+
     <header>
 
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -52,36 +58,74 @@
         <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
             tabindex="0">
             <h4 id="scrollspyHeading1">
-            </h4>
-
-            <p>...</p>
-
-            <br><br><br><br><br><br><br><br><br><br>
-
-            <h4 id="scrollspyHeading2">
                 <div class="card" style="width: 30%;">
-                    <h5 class="card-title text-center">Pizza Crème Fraîche</h5>
-                    <img src="./images/img-plat/creme-fraiche 1.png" class="card-img-top" alt="...">
+                    <h5 class="card-title text-center">Fritte</h5>
+                    <img src="./images/img-fingerfood/fritte 1.png" class="card-img-top" alt="">
                     <div class="card-body">
                         <div>
-                            <p class="flex-fill">18 &#x20AC;</p>
+                            <p class="flex-fill">3,14 &#x20AC;</p> <!-- Référence à Pi -->
                             <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
-                                data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Pizza Crème Fraîche" data-bs-content="Crème Fraîche, Mozarella">
-                                Prix
+                                data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Fritte" data-bs-content="Les frites les plus précises, pour les amateurs de Pi.">
+                                + Info
                             </button>
                             <a href="#" class="btn btn-primary">Commander</a>
                         </div>
                     </div>
                 </div>
                 <div class="card" style="width: 30%;">
-                    <h5 class="card-title text-center">Pizza Spécial Halloween</h5>
-                    <img src="./images/img-plat/haloween 1.png" class="card-img-top" alt="...">
+                    <h5 class="card-title text-center">Mozza Stick</h5>
+                    <img src="./images/img-fingerfood/mozza-roll 1.png" class="card-img-top" alt="">
                     <div class="card-body">
                         <div>
-                            <p class="flex-fill">666 &#x20AC;</p>
+                            <p class="flex-fill">9,99 &#x20AC;</p> <!-- Juste sous 10 € -->
                             <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
-                                data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Pizza Spécial Halloween" data-bs-content="Sauce tomate, Ognion, Burrata, Huile d'olive">
-                                Prix
+                                data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Mozza Stick" data-bs-content="Un classique, juste sous les 10 €, pour votre gourmandise.">
+                                + Info
+                            </button>
+                            <a href="#" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 30%;">
+                    <h5 class="card-title text-center">Oignon Rings</h5>
+                    <img src="./images/img-fingerfood/ognon-ring 1.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div>
+                            <p class="flex-fill">0,99 &#x20AC;</p> <!-- Prix d'appel -->
+                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Oignon Rings" data-bs-content="Les anneaux de l'amitié, à petit prix !">
+                                + Info
+                            </button>
+                            <a href="#" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+                </div>
+            </h4>
+
+            <h4 id="scrollspyHeading2">
+                <div class="card" style="width: 30%;">
+                    <h5 class="card-title text-center">Pizza Crème Fraîche</h5>
+                    <img src="./images/img-plat/creme-fraiche 1.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div>
+                            <p class="flex-fill">19,84 &#x20AC;</p> <!-- Référence au roman 1984 -->
+                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Pizza Crème Fraîche" data-bs-content="Une pizza crémeuse et intrigante, inspirée du célèbre roman de George Orwell.">
+                                + Info
+                            </button>
+                            <a href="#" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 30%;">
+                    <h5 class="card-title text-center">Pizza Spéciale Halloween</h5>
+                    <img src="./images/img-plat/haloween 1.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div>
+                            <p class="flex-fill">666 &#x20AC;</p> <!-- Prix diabolique -->
+                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Pizza Spécial Halloween" data-bs-content="Une pizza pour les âmes courageuses. Un prix diabolique pour une saveur infernale.">
+                                + Info
                             </button>
                             <a href="#" class="btn btn-primary">Commander</a>
                         </div>
@@ -89,32 +133,65 @@
                 </div>
                 <div class="card" style="width: 30%;">
                     <h5 class="card-title text-center">Pizza Sans Fromage</h5>
-                    <img src="./images/img-plat/sans-fromage 1.png" class="card-img-top" alt="...">
+                    <img src="./images/img-plat/sans-fromage 1.png" class="card-img-top" alt="">
                     <div class="card-body">
                         <div>
-                            <p class="flex-fill">2 &#x20AC;</p>
+                            <p class="flex-fill">1,00 &#x20AC;</p> <!-- Minimalisme comique -->
                             <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
-                                data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Pizza Sans Fromage" data-bs-content="Sauce tomate, Crème végétale, Pesto, Huile d'olive">
-                                Prix
+                                data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Pizza Sans Fromage" data-bs-content="La pizza la plus épurée et au prix le plus simple.">
+                                + Info
                             </button>
                             <a href="#" class="btn btn-primary">Commander</a>
                         </div>
                     </div>
                 </div>
             </h4>
-            <p>...</p>
 
-            <br><br><br><br><br><br><br><br><br><br>
-            <h4 id="scrollspyHeading3">Third heading</h4>
-            <p>...</p>
-            <br><br><br><br><br><br><br><br><br><br>
-
-            <h4 id="scrollspyHeading4">Fourth heading</h4>
-            <p>...</p>
-            <h4 id="scrollspyHeading5">Fifth heading</h4>
-            <p>...</p>
+            <h4 id="scrollspyHeading3">
+                <div class="card" style="width: 30%;">
+                    <h5 class="card-title text-center">Pizza à la Banane</h5>
+                    <img src="./images/img-dessert/banane 1.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div>
+                            <p class="flex-fill">4,20 &#x20AC;</p> <!-- Référence subtile -->
+                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Pizza à la Banane" data-bs-content="Une touche fruitée et un prix discret.">
+                                + Info
+                            </button>
+                            <a href="#" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 30%;">
+                    <h5 class="card-title text-center">Pizza Kit-Kat</h5>
+                    <img src="./images/img-dessert/kit-kat 1.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div>
+                            <p class="flex-fill">666 &#x20AC;</p> <!-- Référence à Kit-Kat et Halloween -->
+                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Pizza Kit-Kat" data-bs-content="Un dessert unique, avec une touche de chocolat et d'Halloween.">
+                                + Info
+                            </button>
+                            <a href="#" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 30%;">
+                    <h5 class="card-title text-center">Pizza spéciale sucré-salé</h5>
+                    <img src="./images/img-dessert/sucrer-saler 1.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div>
+                            <p class="flex-fill">7,77 &#x20AC;</p> <!-- Nombre chanceux -->
+                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Pizza sucré-salé" data-bs-content="Un parfait équilibre entre sucré et salé, avec un prix chanceux.">
+                                + Info
+                            </button>
+                            <a href="#" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+                </div>
+            </h4>
         </div>
-
     </main>
 
     <script src="./node_modules\@popperjs\core\dist\umd\popper.min.js"></script>
