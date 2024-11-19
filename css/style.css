@@ -84,4 +84,9 @@ body main .scrollspy-example #scrollspyHeading3 {
 }
 body main .scrollspy-example #scrollspyHeading3 .card .card-body div {
   display: flex;
+}
+body footer {
+  display: flex;
+  justify-content: space-around;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
