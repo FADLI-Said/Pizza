@@ -43,24 +43,55 @@
         </div>
     </header>
 
-    <nav id="navbar-example2" class="navbar navbar-light bg-warning px-3 ">
-        <ul class="nav nav-pills d-flex justify-content-around" style="width: 100%;">
-            <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading1">Entrée</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading2">Plat</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading3">Dessert</a>
-            </li>
-        </ul>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-warning">
+        <div class="container-fluid justify-content-between">
+            <img src="./images/LOGO-removebg-preview.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="bottom"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav nav-pills justify-content-end row mt-2" style="width: 100%;">
+                    <li class="nav-item col-12 col-lg-2">
+                        <a class="nav-link " href="#scrollspyHeading1">Entrée</a>
+                    </li>
+                    <li class="nav-item col-12 col-lg-2">
+                        <a class="nav-link" href="#scrollspyHeading2">Plat</a>
+                    </li>
+                    <li class="nav-item col-12 col-lg-2">
+                        <a class="nav-link" href="#scrollspyHeading3">Dessert</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+
+    <!-- <ul class="nav nav-pills d-flex justify-content-around" style="width: 100%;">
+        <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">Entrée</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Plat</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading3">Dessert</a>
+        </li>
+    </ul> -->
 
     <main>
         <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
             tabindex="0">
-            <h1 class="text-center text-light mb-4">Finger Food</h1>
+            <div class="description">
+                <h1 class="text-center text-light mb-4">Finger Food</h1>
+                <h2 class="text-light">Découvrez nos Finger Food chez</h2>
+                <p class="text-light">Envie de grignoter avant votre pizza ou de partager un moment convivial ?
+                    Découvrez
+                    notre sélection de finger food irrésistibles, parfaits pour satisfaire toutes vos envies, Idéal pour
+                    accompagner vos pizzas ou partager en entrée entre amis, notre assortiment de finger food promet de
+                    régaler tous les gourmands ! </p>
+                <p class="text-light">Passez votre commande dès maintenant et laissez-vous tenter ! </p>
+            </div>
             <h4 id="scrollspyHeading1">
                 <div class="card">
                     <h5 class="card-title text-center">Frite</h5>
@@ -68,13 +99,16 @@
                     <div class="card-body">
                         <div>
                             <p class="flex-fill">3,14 &#x20AC;</p> <!-- Référence à Pi -->
-                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
+                            <button type="button" class="btn btn-info me-3" data-bs-container="body"
                                 data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus"
                                 data-bs-title="Fritte"
                                 data-bs-content="Les frites les plus précises, pour les amateurs de Pi.">
                                 + Info
                             </button>
-                            <a href="#" class="btn btn-primary">Commander</a>
+                            <button type="button" class="btn " data-bs-toggle="modal"
+                                data-bs-target="#exampleModal1">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -84,34 +118,49 @@
                     <div class="card-body">
                         <div>
                             <p class="flex-fill">9,99 &#x20AC;</p> <!-- Juste sous 10 € -->
-                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
+                            <button type="button" class="btn btn-info me-3" data-bs-container="body"
                                 data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus"
                                 data-bs-title="Mozza Stick"
                                 data-bs-content="Un classique, juste sous les 10 €, pour votre gourmandise.">
                                 + Info
                             </button>
-                            <a href="#" class="btn btn-primary">Commander</a>
+                            <button type="button" class="btn " data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <h5 class="card-title text-center">Ognion Rings</h5>
+                    <h5 class="card-title text-center">Oignon Rings</h5>
                     <img src="./images/img-fingerfood/ognon-ring 1.png" class="card-img-top" alt="">
                     <div class="card-body">
                         <div>
                             <p class="flex-fill">0,99 &#x20AC;</p> <!-- Prix d'appel -->
-                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
+                            <button type="button" class="btn btn-info me-3" data-bs-container="body"
                                 data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus"
-                                data-bs-title="Ognion Rings" data-bs-content="Les anneaux de l'amitié, à petit prix !">
+                                data-bs-title="Oignon Rings" data-bs-content="Les anneaux de l'amitié, à petit prix !">
                                 + Info
                             </button>
-                            <a href="#" class="btn btn-primary">Commander</a>
+                            <button type="button" class="btn " data-bs-toggle="modal"
+                                data-bs-target="#exampleModal3">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
             </h4>
 
-            <h1 class="text-center text-light mb-4">Pizza</h1>
+            <div class="description">
+                <h1 class="text-center text-light mb-4">Pizza</h1>
+                <h2 class="text-light">Nos Pizzas : le goût de l'authenticité à chaque bouchée</h2>
+                <p class="text-light">Chez [Nom de la pizzeria], nous mettons tout notre cœur à vous offrir des pizzas
+                    savoureuses, préparées avec des ingrédients frais et de qualité. Découvrez nos créations, pensées
+                    pour satisfaire toutes vos envies, Une pâte artisanale travaillée chaque jour, une cuisson au feu de
+                    bois parfaitement maîtrisée… Chez nous, chaque pizza est une invitation à un voyage gustatif unique
+                </p>
+                <p class="text-light">Commandez dès maintenant ou venez nous rendre visite !</p>
+            </div>
             <h4 id="scrollspyHeading2">
                 <div class="card">
                     <h5 class="card-title text-center">Pizza Crème Fraîche</h5>
@@ -119,13 +168,16 @@
                     <div class="card-body">
                         <div>
                             <p class="flex-fill">19,84 &#x20AC;</p> <!-- Référence au roman 1984 -->
-                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
+                            <button type="button" class="btn btn-info me-3" data-bs-container="body"
                                 data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus"
                                 data-bs-title="Pizza Crème Fraîche"
                                 data-bs-content="Une pizza crémeuse et intrigante, inspirée du célèbre roman de George Orwell.">
                                 + Info
                             </button>
-                            <a href="#" class="btn btn-primary">Commander</a>
+                            <button type="button" class="btn " data-bs-toggle="modal"
+                                data-bs-target="#exampleModal4">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -135,13 +187,16 @@
                     <div class="card-body">
                         <div>
                             <p class="flex-fill">666 &#x20AC;</p> <!-- Prix diabolique -->
-                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
+                            <button type="button" class="btn btn-info me-3" data-bs-container="body"
                                 data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus"
                                 data-bs-title="Pizza Spécial Halloween"
                                 data-bs-content="Une pizza pour les âmes courageuses. Un prix diabolique pour une saveur infernale.">
                                 + Info
                             </button>
-                            <a href="#" class="btn btn-primary">Commander</a>
+                            <button type="button" class="btn " data-bs-toggle="modal"
+                                data-bs-target="#exampleModal5">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -151,19 +206,30 @@
                     <div class="card-body">
                         <div>
                             <p class="flex-fill">1,00 &#x20AC;</p> <!-- Minimalisme comique -->
-                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
+                            <button type="button" class="btn btn-info me-3" data-bs-container="body"
                                 data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus"
                                 data-bs-title="Pizza Sans Fromage"
                                 data-bs-content="La pizza la plus épurée et au prix le plus simple.">
                                 + Info
                             </button>
-                            <a href="#" class="btn btn-primary">Commander</a>
+                            <button type="button" class="btn " data-bs-toggle="modal"
+                                data-bs-target="#exampleModal6">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
             </h4>
 
-            <h1 class="text-center text-light mb-4">Dessert</h1>
+            <div class="description">
+                <h1 class="text-center text-light mb-4">Dessert</h1>
+                <h2 class="text-light">Les Pizzas sucrées : une touche gourmande pour finir en beauté</h2>
+                <p class="text-light">Chez [Nom de la pizzeria], même les desserts passent par le four à pizza !
+                    Découvrez nos pizzas sucrées, des créations originales et gourmandes qui sauront ravir tous les
+                    amateurs de douceurs, nos pizzas sucrées sont parfaites pour conclure votre repas sur une note douce
+                    et originale. À partager... ou pas ! </p>
+                <p class="text-light">Commandez votre dessert maintenant et laissez-vous tenter !</p>
+            </div>
             <h4 id="scrollspyHeading3">
                 <div class="card">
                     <h5 class="card-title text-center">Pizza à la Banane</h5>
@@ -171,13 +237,16 @@
                     <div class="card-body">
                         <div>
                             <p class="flex-fill">4,20 &#x20AC;</p> <!-- Référence subtile -->
-                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
+                            <button type="button" class="btn btn-info me-3" data-bs-container="body"
                                 data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus"
                                 data-bs-title="Pizza à la Banane"
                                 data-bs-content="Une touche fruitée et un prix discret.">
                                 + Info
                             </button>
-                            <a href="#" class="btn btn-primary">Commander</a>
+                            <button type="button" class="btn " data-bs-toggle="modal"
+                                data-bs-target="#exampleModal7">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -187,13 +256,16 @@
                     <div class="card-body">
                         <div>
                             <p class="flex-fill">6,66 &#x20AC;</p> <!-- Référence à Kit-Kat et Halloween -->
-                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
+                            <button type="button" class="btn btn-info me-3" data-bs-container="body"
                                 data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus"
                                 data-bs-title="Pizza Kit-Kat"
                                 data-bs-content="Un dessert unique, avec une touche de chocolat et d'Halloween.">
                                 + Info
                             </button>
-                            <a href="#" class="btn btn-primary">Commander</a>
+                            <button type="button" class="btn " data-bs-toggle="modal"
+                                data-bs-target="#exampleModal8">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -203,13 +275,16 @@
                     <div class="card-body">
                         <div>
                             <p class="flex-fill">7,77 &#x20AC;</p> <!-- Nombre chanceux -->
-                            <button type="button" class="btn btn-secondary me-3" data-bs-container="body"
-                                data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus"
+                            <button type="button" class="btn btn-info me-3" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="top"
                                 data-bs-trigger="focus" data-bs-title="Pizza sucré-salé"
                                 data-bs-content="Un parfait équilibre entre sucré et salé, avec un prix chanceux.">
                                 + Info
                             </button>
-                            <a href="#" class="btn btn-primary">Commander</a>
+                            <button type="button" class="btn " data-bs-toggle="modal"
+                                data-bs-target="#exampleModal9">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -228,6 +303,178 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel1">Bon Appétit</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Vos Frites ont bien été ajoutées.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary">Payer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel2">Bon Appétit</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Vos Mozza Sticks ont bien été ajoutées.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary">Payer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel3">Bon Appétit</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Vos Oignon Rings ont bien été ajoutées.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary">Payer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel4">Bon Appétit</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Votre Pizza Crème Fraîche a bien été ajoutée.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary">Payer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel5">Bon Appétit</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Votre Pizza Spéciale Halloween a bien été ajoutée.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary">Payer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel6">Bon Appétit</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Votre Pizza Sans Fromage a bien été ajoutée.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary">Payer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel7">Bon Appétit</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Votre Pizza à la Banane a bien été ajoutée.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary">Payer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel8">Bon Appétit</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Votre Pizza Kit-Kat a bien été ajoutée.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary">Payer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel9">Bon Appétit</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Votre Pizza spéciale sucré-salé a bien été ajoutée.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary">Payer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     <script src="./node_modules\@popperjs\core\dist\umd\popper.min.js"></script>
     <script src="./node_modules\bootstrap\dist\js\bootstrap.min.js"></script>

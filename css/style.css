@@ -55,17 +55,18 @@ body header .pizza-3 {
   background-size: cover;
   background-position: center;
 }
-body .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 10;
+body .navbar .container-fluid img {
+  width: 4rem;
 }
-body .navbar .nav-link {
-  color: black;
+body .navbar .container-fluid #navbarSupportedContent {
+  justify-content: end;
 }
-body .navbar .nav-link.active {
-  color: yellow;
+body .navbar .container-fluid #navbarSupportedContent .nav-link.active {
   background-color: black;
+  color: yellow;
+}
+body .navbar .container-fluid #navbarSupportedContent .nav-link {
+  color: black;
 }
 body main {
   margin-top: 2rem;
@@ -74,6 +75,7 @@ body main {
 }
 body main .scrollspy-example .card {
   width: 30%;
+  background-color: #cc9500;
 }
 body main .scrollspy-example #scrollspyHeading1 {
   display: flex;
@@ -98,6 +100,10 @@ body main .scrollspy-example #scrollspyHeading3 {
 }
 body main .scrollspy-example #scrollspyHeading3 .card .card-body div {
   display: flex;
+}
+body main .scrollspy-example .description {
+  width: 96%;
+  margin: 0 auto;
 }
 body footer {
   display: flex;

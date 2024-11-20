@@ -68,18 +68,24 @@ body {
         }
     }
 
-    .navbar {
-        position: sticky;
-        top: 0;
-        z-index: 10;
+    .navbar{
+        .container-fluid{
+            img{
+                width: 4rem;
+            }
 
-        .nav-link {
-            color: black;
-        }
+            #navbarSupportedContent{
+                justify-content: end;
 
-        .nav-link.active {
-            color: yellow;
-            background-color: black;
+                .nav-link.active{
+                    background-color: black;
+                    color: yellow;
+                }
+
+                .nav-link{
+                    color: black;
+                }
+            }
         }
     }
 
@@ -91,6 +97,7 @@ body {
         .scrollspy-example {
             .card {
                 width: 30%;
+                background-color: #cc9500 ;
             }
 
             #scrollspyHeading1 {
@@ -133,6 +140,11 @@ body {
                         }
                     }
                 }
+            }
+
+            .description{
+                width: 96%;
+                margin: 0 auto;
             }
         }
 
