@@ -31,36 +31,49 @@ body {
     }
 
     header {
-        background-image: url(../images/LOGO-removebg-preview.png);
+        #logo {
+            img{
+                position: absolute;
+                z-index: 10;
+                top: 25%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            h1 {
+                position: absolute;
+                z-index: 10;
+            }
+        }
+
         .carousel-item {
             height: 30rem;
         }
 
-        .pizza-1{
+        .pizza-1 {
             background-image: url(../images/presentation.jpg);
             background-size: cover;
             background-position: bottom;
         }
 
-        .pizza-2{
+        .pizza-2 {
             background-image: url(../images/presentation2.jpg);
             background-size: cover;
             background-position: center;
         }
 
-        .pizza-3{
+        .pizza-3 {
             background-image: url(../images/presentation3.jpg);
             background-size: cover;
             background-position: center;
         }
     }
 
-    .navbar{
+    .navbar {
         position: sticky;
         top: 0;
         z-index: 10;
 
-        .nav-link{
+        .nav-link {
             color: black;
         }
 
@@ -70,44 +83,52 @@ body {
         }
     }
 
-    main{
+    main {
         margin-top: 2rem;
         display: flex;
         gap: 2rem;
-        .scrollspy-example{
-            #scrollspyHeading1{
+
+        .scrollspy-example {
+            .card {
+                width: 30%;
+            }
+
+            #scrollspyHeading1 {
                 display: flex;
                 justify-content: space-around;
+                margin-bottom: 5rem;
 
-                .card{
-                    .card-body{
-                        div{
+                .card {
+                    .card-body {
+                        div {
                             display: flex;
                         }
                     }
                 }
             }
 
-            #scrollspyHeading2{
+            #scrollspyHeading2 {
                 display: flex;
                 justify-content: space-around;
+                margin-bottom: 5rem;
 
-                .card{
-                    .card-body{
-                        div{
+                .card {
+                    .card-body {
+                        div {
                             display: flex;
                         }
                     }
                 }
             }
 
-            #scrollspyHeading3{
+            #scrollspyHeading3 {
                 display: flex;
                 justify-content: space-around;
+                margin-bottom: 5rem;
 
-                .card{
-                    .card-body{
-                        div{
+                .card {
+                    .card-body {
+                        div {
                             display: flex;
                         }
                     }
@@ -115,13 +136,35 @@ body {
             }
         }
 
-        
+
     }
 
-    footer{
+    footer {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         color: white;
+        background-color: rgba(255, 255, 255,0.2);
+        width: 90%;
+        margin: 1rem auto;
+        padding: 1rem;
+        border-radius: 1rem;
+
+        div{
+            display: flex;
+            flex-direction: column;
+
+            p{
+                font-size: 2rem;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 1.5rem;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
     }
-    
+
 }

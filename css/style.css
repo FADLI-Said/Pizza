@@ -26,8 +26,16 @@ body .background-container .background-overlay {
   height: 100%;
   background: rgba(20, 20, 20, 0.8);
 }
-body header {
-  background-image: url(../images/LOGO-removebg-preview.png);
+body header #logo img {
+  position: absolute;
+  z-index: 10;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body header #logo h1 {
+  position: absolute;
+  z-index: 10;
 }
 body header .carousel-item {
   height: 30rem;
@@ -64,9 +72,13 @@ body main {
   display: flex;
   gap: 2rem;
 }
+body main .scrollspy-example .card {
+  width: 30%;
+}
 body main .scrollspy-example #scrollspyHeading1 {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 5rem;
 }
 body main .scrollspy-example #scrollspyHeading1 .card .card-body div {
   display: flex;
@@ -74,6 +86,7 @@ body main .scrollspy-example #scrollspyHeading1 .card .card-body div {
 body main .scrollspy-example #scrollspyHeading2 {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 5rem;
 }
 body main .scrollspy-example #scrollspyHeading2 .card .card-body div {
   display: flex;
@@ -81,12 +94,33 @@ body main .scrollspy-example #scrollspyHeading2 .card .card-body div {
 body main .scrollspy-example #scrollspyHeading3 {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 5rem;
 }
 body main .scrollspy-example #scrollspyHeading3 .card .card-body div {
   display: flex;
 }
 body footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+body footer div {
+  display: flex;
+  flex-direction: column;
+}
+body footer div p {
+  font-size: 2rem;
+}
+body footer div a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+body footer div a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
