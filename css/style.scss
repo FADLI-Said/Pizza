@@ -42,11 +42,14 @@ body {
             h1 {
                 position: absolute;
                 z-index: 10;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         }
 
         .carousel-item {
-            height: 30rem;
+            height: 40rem;
         }
 
         .pizza-1 {
@@ -98,6 +101,10 @@ body {
             .card {
                 width: 30%;
                 background-color: #cc9500 ;
+
+                .green{
+                    background-color: green;
+                }
             }
 
             #scrollspyHeading1 {
@@ -156,7 +163,7 @@ body {
         justify-content: space-between;
         color: white;
         background-color: rgba(255, 255, 255,0.2);
-        width: 90%;
+        width: 96%;
         margin: 1rem auto;
         padding: 1rem;
         border-radius: 1rem;

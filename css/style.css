@@ -36,9 +36,12 @@ body header #logo img {
 body header #logo h1 {
   position: absolute;
   z-index: 10;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 body header .carousel-item {
-  height: 30rem;
+  height: 40rem;
 }
 body header .pizza-1 {
   background-image: url(../images/presentation.jpg);
@@ -77,6 +80,9 @@ body main .scrollspy-example .card {
   width: 30%;
   background-color: #cc9500;
 }
+body main .scrollspy-example .card .green {
+  background-color: green;
+}
 body main .scrollspy-example #scrollspyHeading1 {
   display: flex;
   justify-content: space-around;
@@ -110,7 +116,7 @@ body footer {
   justify-content: space-between;
   color: white;
   background-color: rgba(255, 255, 255, 0.2);
-  width: 90%;
+  width: 96%;
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 1rem;
