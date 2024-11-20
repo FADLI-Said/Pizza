@@ -15,7 +15,7 @@ body .background-container .background-image {
   -o-object-fit: cover;
      object-fit: cover;
   /* Couvre toute la zone sans déformer l'image */
-  filter: blur(1rem);
+  filter: blur(2rem);
   /* Applique un flou de 8 pixels */
 }
 body .background-container .background-overlay {
@@ -24,7 +24,7 @@ body .background-container .background-overlay {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(20, 20, 20, 0.8);
+  background: rgba(20, 20, 20, 0.7);
 }
 body header #logo img {
   position: absolute;
@@ -36,7 +36,7 @@ body header #logo img {
 body header #logo h1 {
   position: absolute;
   z-index: 10;
-  top: 30%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -65,11 +65,11 @@ body .navbar .container-fluid #navbarSupportedContent {
   justify-content: end;
 }
 body .navbar .container-fluid #navbarSupportedContent .nav-link.active {
-  background-color: black;
-  color: yellow;
+  background-color: #402e32;
+  color: #dfe0df;
 }
 body .navbar .container-fluid #navbarSupportedContent .nav-link {
-  color: black;
+  color: #402e32;
 }
 body main {
   margin-top: 2rem;
@@ -77,62 +77,92 @@ body main {
   gap: 2rem;
 }
 body main .scrollspy-example .card {
-  width: 30%;
-  background-color: #cc9500;
+  box-shadow: 10px 10px 15px black;
+  width: 25%;
+  background-color: rgba(64, 46, 50, 0.7);
+  color: white;
 }
 body main .scrollspy-example .card .green {
-  background-color: green;
+  border: 3px solid green;
+  color: white;
+}
+body main .scrollspy-example .card img {
+  padding: 0 1rem;
+}
+body main .scrollspy-example .card .red {
+  border: 3px solid red;
+  color: white;
+}
+body main .scrollspy-example .card .smoothie {
+  padding: 0;
+  padding-left: 2rem;
 }
 body main .scrollspy-example #scrollspyHeading1 {
+  width: 87%;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 5rem;
+  justify-content: space-between;
 }
 body main .scrollspy-example #scrollspyHeading1 .card .card-body div {
   display: flex;
 }
 body main .scrollspy-example #scrollspyHeading2 {
+  width: 87%;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 5rem;
+  justify-content: space-between;
 }
 body main .scrollspy-example #scrollspyHeading2 .card .card-body div {
   display: flex;
 }
 body main .scrollspy-example #scrollspyHeading3 {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 5rem;
 }
 body main .scrollspy-example #scrollspyHeading3 .card .card-body div {
   display: flex;
 }
 body main .scrollspy-example .description {
-  width: 96%;
+  width: 87%;
   margin: 0 auto;
-}
-body footer {
-  display: flex;
-  justify-content: space-between;
   color: white;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(204, 149, 0, 0.2);
   width: 96%;
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 1rem;
 }
-body footer div {
+body footer #carte {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  color: white;
+  background-color: rgba(204, 149, 0, 0.2);
+  width: 96%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+body footer #carte div {
   display: flex;
   flex-direction: column;
 }
-body footer div p {
+body footer #carte div p {
   font-size: 2rem;
 }
-body footer div a {
+body footer #carte div a {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
 }
-body footer div a:hover {
+body footer #carte div a:hover {
   text-decoration: underline;
+}
+body footer #bottom-bar {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */
