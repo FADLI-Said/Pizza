@@ -90,8 +90,8 @@ body {
                 justify-content: end;
 
                 .nav-link.active {
-                    background-color: #402e32;
-                    color: #dfe0df;
+                    background-color: #d32f2f;
+                    color: #fff8e1;
                 }
 
                 .nav-link {
@@ -109,7 +109,7 @@ body {
         .scrollspy-example {
             .card {
                 box-shadow: 10px 10px 15px black;
-                background-color:rgba(64, 46, 50, 0.7) ;
+                background-color: rgba(247, 166, 0, 0.7);
                 color: white;
                 // background-color: #cc9500 ;
 
@@ -187,7 +187,7 @@ body {
                 width: 87%;
                 margin: 0 auto;
                 color: white;
-                background-color: rgba(204, 149, 0, 0.2);
+                background-color: rgba(255, 4, 4, 0.2);
                 width: 96%;
                 margin: 1rem auto;
                 padding: 1rem;
@@ -204,7 +204,7 @@ body {
             justify-content: space-between;
             flex-direction: row;
             color: white;
-            background-color: rgba(204, 149, 0, 0.2);
+            background-color: rgba(255, 4, 4, 0.2);
             width: 96%;
             margin: 1rem auto;
             padding: 1rem;
@@ -244,4 +244,12 @@ body {
         }
     }
 
+}
+
+@media (max-width: 560px) {
+    header {
+        h1 {
+            font-size: 3rem !important;
+        }
+    }
 }
