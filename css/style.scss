@@ -14,15 +14,12 @@ body {
         height: 100%;
         overflow: hidden;
         z-index: -1;
-        /* Place le fond derrière le contenu */
 
         .background-image {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            /* Couvre toute la zone sans déformer l'image */
             filter: blur(2rem);
-            /* Applique un flou de 8 pixels */
         }
 
         .background-overlay {
@@ -41,6 +38,11 @@ body {
             h1 {
                 font-family: "Kaushan Script", cursive;
                 font-size: 10rem;
+                position: absolute;
+                z-index: 10;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         }
 
